@@ -53,6 +53,7 @@ h2{
 }
 h3{
     font-size: 5.5rem;
+    color: #09071f;
 }
 h4{
     font-size: 5rem;
@@ -165,11 +166,11 @@ a{
     position: relative;
     top: 8rem;
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 0.8fr;
     justify-content: center;
     gap: var(--gep);
-    height: 50vh;
-    padding: 11rem;
+    height: 100vh;
+    padding: 1rem;
     margin: 8rem;
 
 }
@@ -178,7 +179,9 @@ a{
     display: flex;
     flex-flow:wrap;
     justify-content: center;
-    padding: 2rem;
+    padding: 8rem;
+    margin: 8rem;
+
 }
 
 .intro-text-content h2{
@@ -187,7 +190,33 @@ a{
     line-height: 1.2;
 }
 
-.intro-img{
-    max-width: 100%;
+.intro-img2{
+    max-width: 50%;
     height: auto;
 }
+
+.master-pg{
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.intro-center{
+   position: relative;
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1.3fr;
+    justify-content:center;
+    gap: var(--gep);
+    height: 50vh;
+    padding: 11rem;
+    margin-left: 50rem;
+}
+.intro-text-center, .intro-img2{
+  display: flex;
+    flex-flow:wrap;
+    justify-content:first baseline;
+    padding: 20rem;
+}
+
