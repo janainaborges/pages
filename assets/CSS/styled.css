@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #09071f;
+    --gep: 3rem;
+    
+}
+
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open-Sans', sans serif
+*/
+
+html{
+    font-size: 62%;
+}
+
+body {
+    font-family: "Open-Sans", sans serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+    
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 2rem;    
+    font-family: "Open-Sans", sans serif;
+    color: rgba(6, 4, 104, 0.89);
+
+
+    
+    
+}
+
+h2{
+    font-size: 5rem;
+    clear: white;
+}
+h3{
+    font-size: 5.5rem;
+}
+h4{
+    font-size: 5rem;
+}
+h5{
+    font-size: 4.5rem;
+}
+h6{
+    font-size: 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.white-bg{
+    background: white;
+    color: var(--primary-color);
+}
+
+
+.main-bg{
+    background-image: url('../img/81.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gep);
+
+}
+
+
+.section{
+    min-height: 100vh;
+}
+
+.menu h1{
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+
+    
+}
+.menu h1 a{
+    color: inherit;
+}
+
+
+
+
+.menu{
+    /*background: linear-gradient(90deg, rgb(15, 34, 104) 20%, rgb(70, 116, 185) 100%);*/
+    background: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    border-bottom: rgb(224, 221, 221) 1px solid;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+    
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    
+}
+.menu ul li a {
+    display: block;
+    height: 50px;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 4rem;
+    left: 25%;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(10, 5, 82);
+    transition: all 400ms ease-in-out;
+
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 20%;
+} 
+
+.menu-space{
+    height: 9.8rem;
+}
+
+
+.intro-content{
+    position: relative;
+    top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    justify-content: center;
+    gap: var(--gep);
+    height: 50vh;
+    padding: 11rem;
+    margin: 8rem;
+
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow:wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.intro-text-content h2{
+    font-size: 8rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+.intro-img{
+    max-width: 100%;
+    height: auto;
+}
