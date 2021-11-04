@@ -211,7 +211,7 @@ a{
     gap: var(--gep);
     height: 50vh;
     padding: 11rem;
-    margin-left: 50rem;
+    margin-left: 30rem;
 }
 .intro-text-center, .intro-img2{
   display: flex;
